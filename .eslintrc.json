@@ -6,7 +6,8 @@
     "eslint:recommended",
     "plugin:node/recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "parserOptions": {
     "ecmaVersion": 12,
@@ -15,9 +16,17 @@
       "jsx": true
     }
   },
-  "plugins": ["react", "react-hooks"],
+  "ignorePatterns": [
+    "node_modules/",
+    "build/",
+    "dist/"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
   "rules": {
-    //add customize rules here as per your project's needs
+    "node/no-missing-import": "off"
   },
   "settings": {
     "react": {
