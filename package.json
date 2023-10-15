@@ -1,0 +1,26 @@
+{
+  "name": "wheatherapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd client && npm run test",
+    "lint": "eslint **/*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint --fix **/*.{js,jsx,ts,tsx}",
+    "tsc": "tsc && cd client && npm run tsc",
+    "format": "prettier --write **/*.{js,jsx,ts,tsx,scss} --config .prettierrc",
+    "prepare": "husky install",
+    "check": "tsc && npm run lint && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "prettier": "3.0.3"
+  }
+}
